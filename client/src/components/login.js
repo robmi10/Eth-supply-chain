@@ -96,18 +96,14 @@ class Login extends React.Component {
 
     handle_login (status, curr_user){
       if(status == true){
-
-        
+        this.props.history.push(`/manager_home`, {id: this.state.id, username: curr_user , eth_address: this.state.eth_address} ); 
       }
-      this.props.history.push(`/manager_home`, {id: this.state.id, username: curr_user , eth_address: this.state.eth_address} );
     }
 
     handle_customer_login (status, curr_user){
       if(status == true){
-        
+        this.props.history.push(`/customer_home`, {id: this.state.id, username: curr_user , eth_address: this.state.eth_address} ); 
       }
-
-      this.props.history.push(`/customer_home`, {id: this.state.id, username: curr_user , eth_address: this.state.eth_address} );
     }
 
     handle_username = (e) =>{
