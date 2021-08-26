@@ -1,0 +1,2 @@
+export const CONTRACT_ADRESS = '0x924254aD1582b3225D152d97C2aF5f928B0c4BAF'   
+export const HTTP_PROVIDER = 'http://127.0.0.1:7545'
